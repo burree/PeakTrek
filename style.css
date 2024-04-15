@@ -38,7 +38,7 @@ body {
   background-image: url("/images/cykelHero.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100vh; /*viewheight  vhvhvhvhv*/
   display: flex;
   flex-direction: column;
   justify-content: center;
