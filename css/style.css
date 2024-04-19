@@ -1,7 +1,5 @@
 body {
   background-color: black;
-  text-decoration: none;
-  overflow: hidden;
 }
 
 .navbar {
@@ -35,16 +33,18 @@ body {
 }
 
 .hero {
+  position: relative;
   background-image: url("/images/cykelHero.png");
   background-size: cover;
   background-position: center;
-  height: 100vh; /*viewheight  vhvhvhvhv*/
+  min-height: 120vh; /*viewheight  vhvhvhvhv*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .hero h1 {
@@ -68,4 +68,11 @@ body {
 
 .btn:hover {
   background-color: #0056b3;
+}
+
+#footer {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  width: 100%;
 }
