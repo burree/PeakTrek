@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
     <title>Peak Trek</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -17,6 +21,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
   </head>
   <body>
     <div>
@@ -34,6 +43,7 @@
         <p>Ride the Peaks, Feel the Thrill!</p>
         <a href="bikes.html" target="”_blank”" class="btn">Begin Adventure</a>
       </header>
+      <div id="map"></div>
     </div>
     <footer class="footer-Container">
       <div class="socIcons">
@@ -76,5 +86,6 @@
         </ul>
       </div>
     </footer>
+    <script src="/scripts/main.js" defer></script>
   </body>
 </html>

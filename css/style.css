@@ -114,9 +114,32 @@ footer {
 .footerInfo {
   display: flex;
   justify-content: center;
+  text-decoration: none;
+  list-style: none;
 }
 
 .list-item {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 50vh;
+  width: 100%;
+}
+
+#marker {
+  background-image: url(/images/pngtree-3d-pin-map-marker-location-tilt-left-png-image_7250174.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
 }
