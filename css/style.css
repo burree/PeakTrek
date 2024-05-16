@@ -1,44 +1,50 @@
 body {
-  background-color: black !important;
+  /* background-color: rgba(92, 92, 92, 0.512); */
+  background-color: black;
   height: 100vh;
+}
+
+body::-webkit-scrollbar { /*webkit chrome*/
+  display: none;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(92, 92, 92, 0.512);
+  background-color: rgba(92, 92, 92);
   padding: 10px 20px;
-  border: 3px solid rgb(255, 255, 255); /*Hela yttre*/
-  border-color: red !important;
+  border: 3px solid white; /*Hela yttre*/
+}
+
+.logo img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
 }
 
 .navbar-links {
-  border: 1px solid rgb(255, 255, 255); /*länkisarna till höger*/
-  border-color: blue !important;
+  font-size: 32px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  
 }
 
-.navbar a {
-  border: 4px solid rgb(255, 255, 255); /*små länkisarna/// mellan border */
-  border-color: green !important;
-  color: white;
+.navbar-links a {
+  border: 1px solid white; /*små länkisarna/// mellan border */
+  /* border-color: green !important; */
+  color: black;
   text-decoration: none;
   padding: 14px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition-duration: 500ms;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
+
 }
 
-.navbar a:hover {
+.navbar-links a:hover {
   background-color: white;
-  color: black;
-}
-
-.navbar a.home {
-  border: none;
-  background-image: url(/images/trialbike_sport_cycling_4547.ico);
-  background-size: auto;
-  color: white;
 }
 
 .hero {
@@ -46,14 +52,14 @@ body {
   background-image: url("/images/cykelHero.png");
   background-size: cover;
   background-position: center;
-  height: 120vh; /*viewheight  vhvhvhvhv höja 120?*/
+  height: 100vh; /*viewheight  vhvhvhvhv höja 120?*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 320px;
 }
 
 .hero h1 {
@@ -80,43 +86,72 @@ body {
 }
 
 footer {
-  background-color: rgb(92, 92, 92);
+  background-color: rgba(92, 92, 92, 0.512);
 }
+
 
 .footer-container {
   width: 100%;
-  padding: 70px 30px 20px;
+  padding: 40px 20px; 
 }
 
 .socIcons {
   display: flex;
   justify-content: center;
+  
 }
 
 .socIcons a {
   text-decoration: none;
   padding: 10px;
-  background-color: white;
   margin: 10px;
+  transition-duration: 1000ms;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
   border-radius: 50%;
 }
 
 .socIcons a i {
-  font-size: 30px;
+  font-size: 48px; 
   color: black;
-  opacity: 0.9;
 }
+
 
 .socIcons a:hover {
-  background-color: black;
-  transition: 0.5s;
+  background-color: white;
 }
 
-.footerInfo {
+.footer-info {
   display: flex;
   justify-content: center;
+}
+
+.footer-info nav { /*semantisk grehjs*/
+  margin: 0 20px; 
+}
+
+
+.footer-info h2 {
+  font-size: 24px; 
+  margin-bottom: 10px; 
+}
+
+.footer-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-info ul li {
+  margin-bottom: 8px; 
+}
+
+.footer-info ul li a {
+  color: rgb(92, 92, 92); 
   text-decoration: none;
-  list-style: none;
+}
+
+.footer-info ul li a:hover {
+  color: black; 
 }
 
 .list-item {
@@ -148,4 +183,12 @@ footer {
 
 .mapboxgl-popup {
   max-width: 200px;
+}
+
+.wheretofind {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 48px;
+  border-color: white;
 }
