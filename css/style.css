@@ -1,5 +1,6 @@
 body {
   background-color: black !important;
+  height: 100vh;
 }
 
 .navbar {
@@ -9,7 +10,7 @@ body {
   background-color: rgba(92, 92, 92, 0.512);
   padding: 10px 20px;
   border: 3px solid rgb(255, 255, 255); /*Hela yttre*/
-  border-color: red;
+  border-color: red !important;
 }
 
 .navbar-links {
@@ -123,11 +124,17 @@ footer {
   font-style: italic;
 }
 
+#map-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
 #map {
   position: absolute;
   top: 0;
   bottom: 0;
-  height: 50vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -136,7 +143,6 @@ footer {
   background-size: cover;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
   cursor: pointer;
 }
 
