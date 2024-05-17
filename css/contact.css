@@ -1,0 +1,130 @@
+body {
+  background-color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(92, 92, 92);
+  padding: 10px 20px;
+  border: 3px solid white; /*Hela yttre*/
+  width: 100%;
+  height: 100px;
+}
+
+.centered-icon a {
+  font-size: 100px;
+  color: black !important;
+  transition-duration: 500ms;
+  transition-property: color;
+  transition-timing-function: ease-in-out; /*jag vet att det är ett gammalt sätt att skriva på, fattar inte short hand så skriver såhär istället tittade på en sex år gammal youtube video*/
+}
+
+.centered-icon a i:hover {
+  color: white;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+footer {
+  background-color: rgba(92, 92, 92, 0.512);
+}
+
+.footer-container {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.socIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socIcons a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  transition-duration: 1000ms;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
+  border-radius: 50%;
+}
+
+.socIcons a i {
+  font-size: 48px;
+  color: black;
+}
+
+.socIcons a:hover {
+  background-color: white;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info nav {
+  /*semantisk grehjs*/
+  margin: 0 20px;
+}
+
+.footer-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-info ul li {
+  margin-bottom: 8px;
+}
+
+.footer-info ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.footer-info ul li a:hover {
+  color: white;
+}
+
+.list-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
