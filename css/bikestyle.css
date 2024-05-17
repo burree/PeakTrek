@@ -27,10 +27,13 @@ header {
 .centered-icon a {
   font-size: 100px;
   color: black !important;
+  transition-duration: 500ms;
+  transition-property: color;
+  transition-timing-function: ease-in-out; /*jag vet att det är ett gammalt sätt att skriva på, fattar inte short hand så skriver såhär istället tittade på en sex år gammal youtube video*/
 }
 
 .centered-icon a i:hover {
-  color: red;
+  color: white;
 }
 
 h1 {
