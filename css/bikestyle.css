@@ -29,8 +29,8 @@ header {
   color: black !important;
 }
 
-.centered-icon a:hover {
-  color: white;
+.centered-icon a i:hover {
+  color: red;
 }
 
 h1 {
