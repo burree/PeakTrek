@@ -1,17 +1,11 @@
+/* Reset margin for the body */
 body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: black;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 3fr);
-  gap: 30px;
-  color: white;
-}
-
-.grid-item {
-  text-align: center;
-  color: white;
 }
 
 header {
@@ -26,46 +20,26 @@ header {
 
 .centered-icon a {
   font-size: 100px;
-  color: black !important;
+  color: black;
 }
 
 .centered-icon a:hover {
+  color: white; /* Change color on hover */
+}
+
+.content {
+  width: 80%;
+  margin: 20px auto;
+  font-size: 24px;
   color: white;
 }
 
-h1 {
+.about-us {
   text-align: center;
-  margin-bottom: 20px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 18px;
-  text-align: left;
-}
-
-table thead tr {
-  background-color: rgba(92, 92, 92, 0.512);
-  color: white;
-  text-align: left;
-}
-
-table th,
-table td {
-  padding: 12px 15px;
-  border: 1px solid #ddd;
-}
-
-table tbody tr {
-  border-bottom: 1px solid #ddd;
-  background-color: white;
-}
-
-table tbody tr:nth-of-type(odd) {
-  /*Varannan*/
-  background-color: #f3f3f3;
+.about-us ul {
+  list-style-type: disc;
 }
 
 footer {
