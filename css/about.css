@@ -1,4 +1,3 @@
-/* Reset margin for the body */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -24,7 +23,7 @@ header {
 }
 
 .centered-icon a:hover {
-  color: white; /* Change color on hover */
+  color: white;
 }
 
 .content {
