@@ -4,7 +4,8 @@ body {
   height: 100vh;
 }
 
-body::-webkit-scrollbar { /*webkit chrome*/
+body::-webkit-scrollbar {
+  /*webkit chrome*/
   display: none;
 }
 
@@ -27,7 +28,6 @@ body::-webkit-scrollbar { /*webkit chrome*/
   font-size: 32px;
   display: flex;
   align-items: center;
-  
 }
 
 .navbar-links a {
@@ -40,7 +40,6 @@ body::-webkit-scrollbar { /*webkit chrome*/
   transition-duration: 500ms;
   transition-property: background-color;
   transition-timing-function: ease-in-out;
-
 }
 
 .navbar-links a:hover {
@@ -63,7 +62,7 @@ body::-webkit-scrollbar { /*webkit chrome*/
 }
 
 .hero h1 {
-  font-size: 3em;
+  font-size: 3em; /*16px*/
   margin-bottom: 0.5em;
 }
 
@@ -89,16 +88,14 @@ footer {
   background-color: rgba(92, 92, 92, 0.512);
 }
 
-
 .footer-container {
   width: 100%;
-  padding: 40px 20px; 
+  padding: 40px 20px;
 }
 
 .socIcons {
   display: flex;
   justify-content: center;
-  
 }
 
 .socIcons a {
@@ -112,10 +109,9 @@ footer {
 }
 
 .socIcons a i {
-  font-size: 48px; 
+  font-size: 48px;
   color: black;
 }
-
 
 .socIcons a:hover {
   background-color: white;
@@ -126,14 +122,14 @@ footer {
   justify-content: center;
 }
 
-.footer-info nav { /*semantisk grehjs*/
-  margin: 0 20px; 
+.footer-info nav {
+  /*semantisk grehjs*/
+  margin: 0 20px;
 }
 
-
 .footer-info h2 {
-  font-size: 24px; 
-  margin-bottom: 10px; 
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .footer-info ul {
@@ -142,16 +138,16 @@ footer {
 }
 
 .footer-info ul li {
-  margin-bottom: 8px; 
+  margin-bottom: 8px;
 }
 
 .footer-info ul li a {
-  color: rgb(92, 92, 92); 
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 .footer-info ul li a:hover {
-  color: black; 
+  color: rgb(255, 255, 255);
 }
 
 .list-item {

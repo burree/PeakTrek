@@ -39,6 +39,7 @@ header {
 h1 {
   text-align: center;
   margin-bottom: 20px;
+  color: white;
 }
 
 table {
@@ -67,7 +68,7 @@ table tbody tr {
 }
 
 table tbody tr:nth-of-type(odd) {
-  /*Varannan*/
+  /*Varannan (even)*/
   background-color: #f3f3f3;
 }
 
